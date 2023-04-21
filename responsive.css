@@ -1,0 +1,35 @@
+:root{
+	
+	--cor1: #780000;
+	--cor2: #C1121F;
+	--cor3: #FDF0D5;
+	--cor4: #003049;
+	--cor5: #669BBC;
+
+	--fonte: "Rubik";
+	--fonteMenor: 300;
+	--fonteMedio: 400;
+	--fonteMaior: 700;
+	
+}
+
+@media screen and (max-width: 780px){
+	.header{
+		display: flex;
+		flex-direction: column;	
+	}
+
+	.header-nav{
+		width: 90%;
+		margin: 10px 0;
+	}
+	
+	.header-logo-title-link{
+		font-size: 1.3em;
+		font-weight: var(--fonteMedio);
+	}
+
+	.panel-image{
+		height: 350px;
+	}
+}

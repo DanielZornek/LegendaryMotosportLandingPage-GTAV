@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+/*
+
+	Paleta de cor
+
+	cor1: #780000;
+	cor2: #C1121F;
+	cor3: #FDF0D5;
+	cor4: #003049;
+	cor5: #669BBC;
+
+	300, 400, 700
+
+*/
+
+/* variables */
+
+:root{
+	
+	--cor1: #780000;
+	--cor2: #C1121F;
+	--cor3: #FDF0D5;
+	--cor4: #003049;
+	--cor5: #669BBC;
+
+	--fonte: "Rubik";
+	--fonteMenor: 300;
+	--fonteMedio: 400;
+	--fonteMaior: 700;
+	
+}
+
+/* variables */
+
+/* reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--fonte);
+	font-weight: var(--fonteMedio);
+}
+/* reset */
+
+/* header */
+
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 20px;
+	background-color: var(--cor4);
+}
+
+.header-logo-title-link{
+	text-decoration: none;
+	color: var(--cor5);
+	font-weight: var(--fonteMaior);
+	transition: .4s ease-in-out;
+}
+
+.header-logo-title-link:hover{
+	color: var(--cor3);
+}
+
+.header-nav{
+	width: 40vw;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header-nav-item{
+	text-decoration: none;
+	color: var(--cor3);
+	padding: 8px;
+	transition: .2s ease-in;
+	border-radius: 10px;
+}
+
+.header-nav-item:hover{
+	text-decoration: underline;
+	color: var(--cor1);
+	background-color: var(--cor3);
+}
+
+/* header */
+
+/* backgrond image panel */
+.panel-image{
+	height: 450px;
+	background-image: url("https://meups.com.br/wp-content/uploads/2018/04/GTA-V_Carro1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom center;
+	transition: .4s ease-in-out;
+	background-color: var(--cor4);
+	filter: grayscale(20%);
+	animation-name: animatePanel;
+	animation-duration: 16s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animatePanel{
+	20%{
+		background-image: url("https://c4.wallpaperflare.com/wallpaper/441/224/12/grand-theft-auto-grand-theft-auto-v-car-sport-car-wallpaper-preview.jpg");
+		background-position: top center;
+	}
+
+	45%{
+		background-image: url("https://i.pinimg.com/originals/cf/47/08/cf4708cc226918db2457d099341342d1.jpg");
+		background-position: bottom center;
+	}
+
+	90%{
+		background-image: url("https://meups.com.br/wp-content/uploads/2018/04/GTA-V_Carro1.jpg");
+	}
+}
+/* backgrond image panel */
+
+/* Container */
+
+.card-cars{
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	flex-wrap: wrap;
+	background-color: #000;
+	justify-content: space-evenly;
+}
+
+.card-cars-car{
+	width: 300px;
+	background-color: var(--cor3);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	border-radius: 20px;
+	margin: 15px 0;
+}
+
+.card-cars-car-image{
+	margin: 20px 0;
+	border-radius: 15px;
+}
+
+.card-cars-car-info{
+	margin: 8px;
+	background-color: #000;
+	border-radius: 10px;
+	color: var(--cor3);
+	padding: 15px;
+}
+
+.card-cars-car-info-name{
+	font-weight: var(--fonteMaior);
+	margin: 8px 0;
+}
+
+.card-cars-car-info-text{
+	margin: 8px 0;
+}
+
+.card-cars-car-info-options{
+	display: flex;
+	height: 60px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.card-cars-car-info-options-view{
+	width: 35%;
+	background-color: var(--cor4);
+	cursor: pointer;
+	font-size: 1.1em;
+	outline: none;
+	border: 1px solid var(--cor4);
+	border-radius: 10px;
+	transition: .4s ease-in-out;
+	opacity: 70%;
+}
+
+.card-cars-car-info-options-view:hover{
+	color: var(--cor3);
+	opacity: 100%;
+}
+
+.card-cars-car-info-options-buy{
+	width: 35%;
+	background-color: var(--cor2);
+	cursor: pointer;
+	font-size: 1.1em;
+	outline: none;
+	border: 1px solid var(--cor1);
+	border-radius: 10px;
+	transition: .4s ease-in-out;
+	opacity: 70%;
+}
+
+.card-cars-car-info-options-buy:hover{
+	color: var(--cor3);
+	opacity: 100%;
+}
+/* Container */
+
+/* Footer */
+
+.footer{
+	height: 200px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(40deg,var(--cor4), var(--cor4), var(--cor3));
+	color: var(--cor3);
+	font-size: 18px;
+}
+
+/* Footer */
